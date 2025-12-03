@@ -1,4 +1,4 @@
-# Project Portfolio MSBA Case Competition: Cart Abandonment
+# MSBA Case Competition: Cart Abandonment
 
 ## 👤 Author
 **Ethan Aslami**  
