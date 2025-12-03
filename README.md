@@ -21,6 +21,8 @@
 > **Our team developed a machine learning pipeline to predict cart abandonment probability at the session level, combined with exploratory analysis to identify abandonment drivers.**
 
 - We created a new session-level cart abandonment method, which allowed us to look into features at the session level and gain further insights with higher confidence in the abandonment results as well.
+    - **Session Explanation**
+        - We define cart abandonment at the session level rather than the individual event level to better capture actual customer shopping behavior. A shopping session is defined as a sequence of add_to_cart events for a given customer where consecutive events occur within 30 minutes of each other. If more than 30 minutes elapse between add_to_cart events, a new session begins. This approach groups related shopping activity together—for example, a customer who adds five items to their cart over a 10-minute period is treated as a single shopping session, not five separate abandonment opportunities.
 - Used a variety of models including Random Forest and XGBoost methods to predict abandonment for customers.
 - All analysis was completed in R with markdown and R scripts.
 
